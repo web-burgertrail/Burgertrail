@@ -1,0 +1,117 @@
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { useCart } from '../context/CartContext';
+
+const BADGE_COLORS = {
+  'Bestseller': 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
+  "Chef's Pick": 'bg-purple-500/20 text-purple-400 border-purple-500/30',
+  'Hot 🔥': 'bg-red-500/20 text-red-400 border-red-500/30',
+  'Veg': 'bg-green-500/20 text-green-400 border-green-500/30',
+  'Signature': 'bg-orange-primary/20 text-orange-primary border-orange-primary/30',
+  'Fan Fav': 'bg-pink-500/20 text-pink-400 border-pink-500/30',
+  'Must Try': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+  'Summer 🍉': 'bg-green-600/20 text-green-300 border-green-600/30',
+};
+
+export default function MenuCard({ item }) {
+  const { addItem, items } = useCart();
+  const [added, setAdded] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
+  const inCart = items.find(i => i.id === item.id);
+  const badgeClass = BADGE_COLORS[item.badge] || 'bg-white/10 text-white/70 border-white/20';
+
+  const handleAdd = () => {
+    addItem(item);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 1500);
+  };
+
+  return (
+    <motion.div
+      layout
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      whileHover={{ y: -6 }}
+      transition={{ duration: 0.3 }}
+      className="group glass rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-orange-primary/10"
+    >
+      {/* Image */}
+      <div className="relative aspect-[4/3] overflow-hidden bg-dark-600">
+        {!imgError ? (
+          <img
+            src={item.image}
+            alt={item.name}
+            loading="lazy"
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-dark-700">
+            <div className="text-center">
+              <span className="text-5xl">🍔</span>
+              <p className="text-white/30 text-xs mt-2 font-body">Image coming soon</p>
+            </div>
+          </div>
+        )}
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        {/* Badge */}
+        {item.badge && (
+          <span className={`absolute top-3 left-3 text-xs font-heading font-medium px-2.5 py-1 rounded-full border ${badgeClass}`}>
+            {item.badge}
+          </span>
+        )}
+        {/* In cart indicator */}
+        {inCart && (
+          <div className="absolute top-3 right-3 w-7 h-7 bg-orange-primary rounded-full flex items-center justify-center">
+            <span className="text-white text-xs font-bold">{inCart.quantity}</span>
+          </div>
+        )}
+      </div>
+
+      {/* Content */}
+      <div className="p-4">
+        <h3 className="font-heading font-semibold text-white text-base mb-1 line-clamp-1 group-hover:text-orange-primary transition-colors duration-300">
+          {item.name}
+        </h3>
+        {item.description && (
+          <p className="text-white/40 text-xs font-body leading-relaxed mb-3 line-clamp-2">
+            {item.description}
+          </p>
+        )}
+        <div className="flex items-center justify-between mt-2">
+          <span className="font-display text-2xl text-orange-primary tracking-wide">
+            ₹{item.price}
+          </span>
+          <motion.button
+            whileTap={{ scale: 0.92 }}
+            onClick={handleAdd}
+            className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-heading font-medium tracking-wide transition-all duration-300 ${
+              added
+                ? 'bg-green-500 text-white'
+                : 'bg-orange-primary hover:bg-orange-light text-white glow-orange-sm'
+            }`}
+          >
+            {added ? (
+              <>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                Added!
+              </>
+            ) : (
+              <>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                Add
+              </>
+            )}
+          </motion.button>
+        </div>
+      </div>
+    </motion.div>
+  );
+}

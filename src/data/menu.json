@@ -1,0 +1,230 @@
+{
+  "burgers": [
+    {
+      "id": "b1",
+      "name": "Classic Chicken Burger",
+      "price": 130,
+      "description": "Crispy golden chicken fillet with lettuce, tomato & house mayo",
+      "image": "/images/menu/burgers/classic-chicken.jpg",
+      "badge": "Bestseller"
+    },
+    {
+      "id": "b2",
+      "name": "Double Smash Burger",
+      "price": 180,
+      "description": "Two smashed beef patties, American cheese, pickles & secret sauce",
+      "image": "/images/menu/burgers/double-smash.jpg",
+      "badge": "Chef's Pick"
+    },
+    {
+      "id": "b3",
+      "name": "Spicy Jalapeño Burger",
+      "price": 150,
+      "description": "Fiery chicken with jalapeños, pepper jack cheese & sriracha aioli",
+      "image": "/images/menu/burgers/spicy-jalapeno.jpg",
+      "badge": "Hot 🔥"
+    },
+    {
+      "id": "b4",
+      "name": "BBQ Bacon Tower",
+      "price": 210,
+      "description": "Loaded with crispy bacon, BBQ sauce, onion rings & cheddar",
+      "image": "/images/menu/burgers/bbq-bacon.jpg",
+      "badge": null
+    },
+    {
+      "id": "b5",
+      "name": "Veggie Supreme",
+      "price": 120,
+      "description": "Grilled veggie patty with avocado, sprouts & honey mustard",
+      "image": "/images/menu/burgers/veggie-supreme.jpg",
+      "badge": "Veg"
+    },
+    {
+      "id": "b6",
+      "name": "Mushroom Swiss Melt",
+      "price": 160,
+      "description": "Beef patty smothered in sautéed mushrooms & melted Swiss cheese",
+      "image": "/images/menu/burgers/mushroom-swiss.jpg",
+      "badge": null
+    }
+  ],
+  "wraps": [
+    {
+      "id": "w1",
+      "name": "Grilled Chicken Wrap",
+      "price": 120,
+      "description": "Tender grilled chicken, fresh veggies & garlic herb sauce in a soft tortilla",
+      "image": "/images/menu/wraps/grilled-chicken.jpg",
+      "badge": "Bestseller"
+    },
+    {
+      "id": "w2",
+      "name": "Crispy Paneer Wrap",
+      "price": 110,
+      "description": "Golden fried paneer, crunchy slaw & mint chutney wrapped tight",
+      "image": "/images/menu/wraps/crispy-paneer.jpg",
+      "badge": "Veg"
+    },
+    {
+      "id": "w3",
+      "name": "BBQ Beef Wrap",
+      "price": 140,
+      "description": "Slow-cooked shredded beef, smoky BBQ, caramelized onions & jalapeños",
+      "image": "/images/menu/wraps/bbq-beef.jpg",
+      "badge": null
+    },
+    {
+      "id": "w4",
+      "name": "Spicy Schezwan Wrap",
+      "price": 115,
+      "description": "Schezwan sauce tossed chicken with crispy noodles & sesame",
+      "image": "/images/menu/wraps/schezwan.jpg",
+      "badge": "Hot 🔥"
+    }
+  ],
+  "pizza": [
+    {
+      "id": "p1",
+      "name": "Trails Special Pizza",
+      "price": 280,
+      "description": "Our signature 9\" pizza with double cheese, pepperoni & house blend herbs",
+      "image": "/images/menu/pizza/trails-special.jpg",
+      "badge": "Signature"
+    },
+    {
+      "id": "p2",
+      "name": "BBQ Chicken Pizza",
+      "price": 260,
+      "description": "Smoky BBQ base, grilled chicken, red onions & mozzarella",
+      "image": "/images/menu/pizza/bbq-chicken.jpg",
+      "badge": "Bestseller"
+    },
+    {
+      "id": "p3",
+      "name": "Margherita Royale",
+      "price": 220,
+      "description": "San Marzano tomato sauce, buffalo mozzarella & fresh basil",
+      "image": "/images/menu/pizza/margherita.jpg",
+      "badge": "Veg"
+    },
+    {
+      "id": "p4",
+      "name": "Spicy Meat Feast",
+      "price": 320,
+      "description": "Loaded with salami, beef mince, chicken & fiery arrabiata sauce",
+      "image": "/images/menu/pizza/meat-feast.jpg",
+      "badge": "Hot 🔥"
+    }
+  ],
+  "pasta": [
+    {
+      "id": "pa1",
+      "name": "Penne Arrabiata",
+      "price": 160,
+      "description": "Classic spicy tomato sauce with garlic, chilli & fresh parsley",
+      "image": "/images/menu/pasta/arrabiata.jpg",
+      "badge": "Veg"
+    },
+    {
+      "id": "pa2",
+      "name": "Chicken Alfredo",
+      "price": 200,
+      "description": "Creamy parmesan sauce with grilled chicken & fettuccine",
+      "image": "/images/menu/pasta/alfredo.jpg",
+      "badge": "Bestseller"
+    },
+    {
+      "id": "pa3",
+      "name": "Bolognese Classic",
+      "price": 220,
+      "description": "Slow-simmered beef ragu on fresh spaghetti with pecorino",
+      "image": "/images/menu/pasta/bolognese.jpg",
+      "badge": null
+    },
+    {
+      "id": "pa4",
+      "name": "Pink Sauce Pasta",
+      "price": 180,
+      "description": "Dreamy blend of tomato & cream with mushrooms & bell peppers",
+      "image": "/images/menu/pasta/pink-sauce.jpg",
+      "badge": "Chef's Pick"
+    }
+  ],
+  "beverages": [
+    {
+      "id": "bv1",
+      "name": "Classic Cola",
+      "price": 50,
+      "description": "Chilled Pepsi / 7Up / Mirinda — your choice",
+      "image": "/images/menu/beverages/cola.jpg",
+      "badge": null
+    },
+    {
+      "id": "bv2",
+      "name": "Mango Mastani",
+      "price": 90,
+      "description": "Thick Alphonso mango shake with ice cream & dry fruits",
+      "image": "/images/menu/beverages/mango-mastani.jpg",
+      "badge": "Fan Fav"
+    },
+    {
+      "id": "bv3",
+      "name": "Oreo Milkshake",
+      "price": 100,
+      "description": "Blended Oreo cookies, vanilla ice cream & chilled milk",
+      "image": "/images/menu/beverages/oreo-shake.jpg",
+      "badge": "Bestseller"
+    },
+    {
+      "id": "bv4",
+      "name": "Fresh Lime Soda",
+      "price": 60,
+      "description": "Sweet or salted — refreshing chilled lime soda",
+      "image": "/images/menu/beverages/lime-soda.jpg",
+      "badge": null
+    },
+    {
+      "id": "bv5",
+      "name": "Watermelon Cooler",
+      "price": 80,
+      "description": "Fresh watermelon juice with mint, lemon & a pinch of chaat masala",
+      "image": "/images/menu/beverages/watermelon.jpg",
+      "badge": "Summer 🍉"
+    }
+  ],
+  "desserts": [
+    {
+      "id": "d1",
+      "name": "Molten Lava Cake",
+      "price": 120,
+      "description": "Warm chocolate cake with a gooey molten centre & vanilla ice cream",
+      "image": "/images/menu/desserts/lava-cake.jpg",
+      "badge": "Must Try"
+    },
+    {
+      "id": "d2",
+      "name": "Brownie Sundae",
+      "price": 110,
+      "description": "Fudgy chocolate brownie topped with vanilla ice cream & hot fudge",
+      "image": "/images/menu/desserts/brownie-sundae.jpg",
+      "badge": "Bestseller"
+    },
+    {
+      "id": "d3",
+      "name": "Churros with Dip",
+      "price": 90,
+      "description": "Crispy cinnamon churros with Belgian chocolate dipping sauce",
+      "image": "/images/menu/desserts/churros.jpg",
+      "badge": null
+    },
+    {
+      "id": "d4",
+      "name": "New York Cheesecake",
+      "price": 130,
+      "description": "Classic baked cheesecake with berry coulis & fresh strawberries",
+      "image": "/images/menu/desserts/cheesecake.jpg",
+      "badge": null
+    }
+  ]
+}
