@@ -1,230 +1,41 @@
 {
   "burgers": [
-    {
-      "id": "b1",
-      "name": "Classic Chicken Burger",
-      "price": 130,
-      "description": "Crispy golden chicken fillet with lettuce, tomato & house mayo",
-      "image": "/images/menu/burgers/classic-chicken.jpg",
-      "badge": "Bestseller"
-    },
-    {
-      "id": "b2",
-      "name": "Double Smash Burger",
-      "price": 180,
-      "description": "Two smashed beef patties, American cheese, pickles & secret sauce",
-      "image": "/images/menu/burgers/double-smash.jpg",
-      "badge": "Chef's Pick"
-    },
-    {
-      "id": "b3",
-      "name": "Spicy Jalapeño Burger",
-      "price": 150,
-      "description": "Fiery chicken with jalapeños, pepper jack cheese & sriracha aioli",
-      "image": "/images/menu/burgers/spicy-jalapeno.jpg",
-      "badge": "Hot 🔥"
-    },
-    {
-      "id": "b4",
-      "name": "BBQ Bacon Tower",
-      "price": 210,
-      "description": "Loaded with crispy bacon, BBQ sauce, onion rings & cheddar",
-      "image": "/images/menu/burgers/bbq-bacon.jpg",
-      "badge": null
-    },
-    {
-      "id": "b5",
-      "name": "Veggie Supreme",
-      "price": 120,
-      "description": "Grilled veggie patty with avocado, sprouts & honey mustard",
-      "image": "/images/menu/burgers/veggie-supreme.jpg",
-      "badge": "Veg"
-    },
-    {
-      "id": "b6",
-      "name": "Mushroom Swiss Melt",
-      "price": 160,
-      "description": "Beef patty smothered in sautéed mushrooms & melted Swiss cheese",
-      "image": "/images/menu/burgers/mushroom-swiss.jpg",
-      "badge": null
-    }
+    { "id": "b1", "name": "Classic Chicken Burger", "price": 130, "description": "Crispy golden chicken fillet, fresh lettuce, juicy tomato slices and our signature house mayo — all packed in a toasted brioche bun.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80", "badge": "Bestseller", "rating": "4.5", "reviews": 342, "calories": 480, "fallback": "🍔" },
+    { "id": "b2", "name": "Double Smash Burger", "price": 180, "description": "Two hand-smashed beef patties, melted American cheese, crunchy pickles and our tangy secret sauce in a sesame brioche bun.", "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&q=80", "badge": "Chef's Pick", "rating": "4.7", "reviews": 218, "calories": 620, "fallback": "🍔" },
+    { "id": "b3", "name": "Spicy Jalapeño Burger", "price": 150, "description": "Fiery crispy chicken fillet loaded with fresh jalapeños, pepper jack cheese, crispy onions and a zesty sriracha aioli.", "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&q=80", "badge": "Hot 🔥", "rating": "4.3", "reviews": 156, "calories": 510, "fallback": "🌶️" },
+    { "id": "b4", "name": "BBQ Bacon Tower", "price": 210, "description": "A towering beauty — beef patty layered with crispy smoked bacon, smoky BBQ sauce, caramelised onion rings and sharp cheddar.", "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&q=80", "badge": null, "rating": "4.4", "reviews": 198, "calories": 720, "fallback": "🥓" },
+    { "id": "b5", "name": "Veggie Supreme", "price": 120, "description": "Grilled veggie patty packed with creamy avocado, crunchy sprouts, roasted peppers and sweet honey mustard dressing.", "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80", "badge": "Veg", "rating": "4.1", "reviews": 89, "calories": 380, "fallback": "🥗" },
+    { "id": "b6", "name": "Mushroom Swiss Melt", "price": 160, "description": "Juicy beef patty smothered in sautéed garlic mushrooms, rich Swiss cheese and a silky truffle aioli.", "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80", "badge": null, "rating": "4.2", "reviews": 134, "calories": 530, "fallback": "🍄" }
   ],
   "wraps": [
-    {
-      "id": "w1",
-      "name": "Grilled Chicken Wrap",
-      "price": 120,
-      "description": "Tender grilled chicken, fresh veggies & garlic herb sauce in a soft tortilla",
-      "image": "/images/menu/wraps/grilled-chicken.jpg",
-      "badge": "Bestseller"
-    },
-    {
-      "id": "w2",
-      "name": "Crispy Paneer Wrap",
-      "price": 110,
-      "description": "Golden fried paneer, crunchy slaw & mint chutney wrapped tight",
-      "image": "/images/menu/wraps/crispy-paneer.jpg",
-      "badge": "Veg"
-    },
-    {
-      "id": "w3",
-      "name": "BBQ Beef Wrap",
-      "price": 140,
-      "description": "Slow-cooked shredded beef, smoky BBQ, caramelized onions & jalapeños",
-      "image": "/images/menu/wraps/bbq-beef.jpg",
-      "badge": null
-    },
-    {
-      "id": "w4",
-      "name": "Spicy Schezwan Wrap",
-      "price": 115,
-      "description": "Schezwan sauce tossed chicken with crispy noodles & sesame",
-      "image": "/images/menu/wraps/schezwan.jpg",
-      "badge": "Hot 🔥"
-    }
+    { "id": "w1", "name": "Grilled Chicken Wrap", "price": 120, "description": "Tender grilled chicken strips, crisp fresh veggies, cool sour cream and a punchy garlic herb sauce, all wrapped tight in a warm soft tortilla.", "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&q=80", "badge": "Bestseller", "rating": "4.4", "reviews": 211, "calories": 390, "fallback": "🌯" },
+    { "id": "w2", "name": "Crispy Paneer Wrap", "price": 110, "description": "Golden pan-fried paneer pieces, crunchy slaw, pickled onions and a refreshing mint chutney rolled in a toasted whole wheat tortilla.", "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80", "badge": "Veg", "rating": "4.2", "reviews": 143, "calories": 360, "fallback": "🧀" },
+    { "id": "w3", "name": "BBQ Beef Wrap", "price": 140, "description": "Slow-cooked shredded beef, smoky house BBQ sauce, caramelised onions, jalapeño slices and melted cheese in a grilled tortilla.", "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&q=80", "badge": null, "rating": "4.3", "reviews": 98, "calories": 450, "fallback": "🌯" },
+    { "id": "w4", "name": "Spicy Schezwan Wrap", "price": 115, "description": "Schezwan-tossed chicken with crispy fried noodles, spring onions, sesame seeds and a fiery red chilli sauce all in one bold wrap.", "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80", "badge": "Hot 🔥", "rating": "4.1", "reviews": 76, "calories": 410, "fallback": "🔥" }
   ],
   "pizza": [
-    {
-      "id": "p1",
-      "name": "Trails Special Pizza",
-      "price": 280,
-      "description": "Our signature 9\" pizza with double cheese, pepperoni & house blend herbs",
-      "image": "/images/menu/pizza/trails-special.jpg",
-      "badge": "Signature"
-    },
-    {
-      "id": "p2",
-      "name": "BBQ Chicken Pizza",
-      "price": 260,
-      "description": "Smoky BBQ base, grilled chicken, red onions & mozzarella",
-      "image": "/images/menu/pizza/bbq-chicken.jpg",
-      "badge": "Bestseller"
-    },
-    {
-      "id": "p3",
-      "name": "Margherita Royale",
-      "price": 220,
-      "description": "San Marzano tomato sauce, buffalo mozzarella & fresh basil",
-      "image": "/images/menu/pizza/margherita.jpg",
-      "badge": "Veg"
-    },
-    {
-      "id": "p4",
-      "name": "Spicy Meat Feast",
-      "price": 320,
-      "description": "Loaded with salami, beef mince, chicken & fiery arrabiata sauce",
-      "image": "/images/menu/pizza/meat-feast.jpg",
-      "badge": "Hot 🔥"
-    }
+    { "id": "p1", "name": "Trails Special Pizza", "price": 280, "description": "Our signature 9-inch loaded pizza featuring double mozzarella, spicy pepperoni, fresh basil and our secret house herb blend on a stone-baked crust.", "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80", "badge": "Signature", "rating": "4.8", "reviews": 387, "calories": 780, "fallback": "🍕" },
+    { "id": "p2", "name": "BBQ Chicken Pizza", "price": 260, "description": "Smoky BBQ base loaded with succulent grilled chicken, sharp red onion rings, jalapeño slices and stretchy mozzarella on a crispy thin crust.", "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80", "badge": "Bestseller", "rating": "4.6", "reviews": 289, "calories": 720, "fallback": "🍕" },
+    { "id": "p3", "name": "Margherita Royale", "price": 220, "description": "Classic San Marzano tomato sauce, hand-torn buffalo mozzarella and fresh basil leaves on a perfectly blistered wood-fired style crust.", "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80", "badge": "Veg", "rating": "4.4", "reviews": 214, "calories": 580, "fallback": "🍕" },
+    { "id": "p4", "name": "Spicy Meat Feast", "price": 320, "description": "The ultimate carnivore pizza — Italian salami, beef mince, charred chicken and chorizo on a fiery arrabiata sauce base. Not for the faint-hearted!", "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80", "badge": "Hot 🔥", "rating": "4.7", "reviews": 176, "calories": 890, "fallback": "🥩" }
   ],
   "pasta": [
-    {
-      "id": "pa1",
-      "name": "Penne Arrabiata",
-      "price": 160,
-      "description": "Classic spicy tomato sauce with garlic, chilli & fresh parsley",
-      "image": "/images/menu/pasta/arrabiata.jpg",
-      "badge": "Veg"
-    },
-    {
-      "id": "pa2",
-      "name": "Chicken Alfredo",
-      "price": 200,
-      "description": "Creamy parmesan sauce with grilled chicken & fettuccine",
-      "image": "/images/menu/pasta/alfredo.jpg",
-      "badge": "Bestseller"
-    },
-    {
-      "id": "pa3",
-      "name": "Bolognese Classic",
-      "price": 220,
-      "description": "Slow-simmered beef ragu on fresh spaghetti with pecorino",
-      "image": "/images/menu/pasta/bolognese.jpg",
-      "badge": null
-    },
-    {
-      "id": "pa4",
-      "name": "Pink Sauce Pasta",
-      "price": 180,
-      "description": "Dreamy blend of tomato & cream with mushrooms & bell peppers",
-      "image": "/images/menu/pasta/pink-sauce.jpg",
-      "badge": "Chef's Pick"
-    }
+    { "id": "pa1", "name": "Penne Arrabiata", "price": 160, "description": "Al dente penne pasta in a bold, slow-cooked spicy tomato sauce with fresh garlic, dried chillies, capers and torn fresh parsley.", "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&q=80", "badge": "Veg", "rating": "4.2", "reviews": 134, "calories": 480, "fallback": "🍝" },
+    { "id": "pa2", "name": "Chicken Alfredo", "price": 200, "description": "Silky fettuccine in a rich parmesan cream sauce tossed with tender grilled chicken strips, cracked black pepper and garlic butter breadcrumbs.", "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&q=80", "badge": "Bestseller", "rating": "4.5", "reviews": 267, "calories": 620, "fallback": "🍝" },
+    { "id": "pa3", "name": "Bolognese Classic", "price": 220, "description": "Rich, slow-simmered beef and pork ragu on fresh spaghetti topped with aged pecorino and a drizzle of extra virgin olive oil.", "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80", "badge": null, "rating": "4.3", "reviews": 189, "calories": 660, "fallback": "🍝" },
+    { "id": "pa4", "name": "Pink Sauce Pasta", "price": 180, "description": "A dreamy blush pasta — rich tomato and fresh cream sauce with sautéed mushrooms, colourful bell peppers and a sprinkle of parmesan.", "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80", "badge": "Chef's Pick", "rating": "4.4", "reviews": 156, "calories": 540, "fallback": "🍝" }
   ],
   "beverages": [
-    {
-      "id": "bv1",
-      "name": "Classic Cola",
-      "price": 50,
-      "description": "Chilled Pepsi / 7Up / Mirinda — your choice",
-      "image": "/images/menu/beverages/cola.jpg",
-      "badge": null
-    },
-    {
-      "id": "bv2",
-      "name": "Mango Mastani",
-      "price": 90,
-      "description": "Thick Alphonso mango shake with ice cream & dry fruits",
-      "image": "/images/menu/beverages/mango-mastani.jpg",
-      "badge": "Fan Fav"
-    },
-    {
-      "id": "bv3",
-      "name": "Oreo Milkshake",
-      "price": 100,
-      "description": "Blended Oreo cookies, vanilla ice cream & chilled milk",
-      "image": "/images/menu/beverages/oreo-shake.jpg",
-      "badge": "Bestseller"
-    },
-    {
-      "id": "bv4",
-      "name": "Fresh Lime Soda",
-      "price": 60,
-      "description": "Sweet or salted — refreshing chilled lime soda",
-      "image": "/images/menu/beverages/lime-soda.jpg",
-      "badge": null
-    },
-    {
-      "id": "bv5",
-      "name": "Watermelon Cooler",
-      "price": 80,
-      "description": "Fresh watermelon juice with mint, lemon & a pinch of chaat masala",
-      "image": "/images/menu/beverages/watermelon.jpg",
-      "badge": "Summer 🍉"
-    }
+    { "id": "bv1", "name": "Classic Cola", "price": 50, "description": "Ice-cold Pepsi, 7Up or Mirinda — chilled to perfection and served in a frosty glass. The perfect companion for any meal.", "image": "https://images.unsplash.com/photo-1581098365948-6a5a912b7a49?w=400&q=80", "badge": null, "rating": "4.0", "reviews": 412, "calories": 140, "fallback": "🥤" },
+    { "id": "bv2", "name": "Mango Mastani", "price": 90, "description": "A Pune classic — thick Alphonso mango shake piled high with a scoop of vanilla ice cream, roasted dry fruits and rose syrup.", "image": "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=80", "badge": "Fan Fav", "rating": "4.7", "reviews": 289, "calories": 320, "fallback": "🥭" },
+    { "id": "bv3", "name": "Oreo Milkshake", "price": 100, "description": "Blended Oreo cookies with creamy vanilla ice cream, cold milk and a swirl of whipped cream. Thick, indulgent and absolutely addictive.", "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80", "badge": "Bestseller", "rating": "4.6", "reviews": 321, "calories": 380, "fallback": "🍪" },
+    { "id": "bv4", "name": "Fresh Lime Soda", "price": 60, "description": "Freshly squeezed lime juice with chilled sparkling water — available sweet, salted or both. Refreshing and light on the palate.", "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80", "badge": null, "rating": "4.3", "reviews": 198, "calories": 60, "fallback": "🍋" },
+    { "id": "bv5", "name": "Watermelon Cooler", "price": 80, "description": "Freshly blended watermelon juice with a hint of fresh mint, a squeeze of lemon and a pinch of chaat masala for that extra kick.", "image": "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400&q=80", "badge": "Summer 🍉", "rating": "4.4", "reviews": 143, "calories": 90, "fallback": "🍉" }
   ],
   "desserts": [
-    {
-      "id": "d1",
-      "name": "Molten Lava Cake",
-      "price": 120,
-      "description": "Warm chocolate cake with a gooey molten centre & vanilla ice cream",
-      "image": "/images/menu/desserts/lava-cake.jpg",
-      "badge": "Must Try"
-    },
-    {
-      "id": "d2",
-      "name": "Brownie Sundae",
-      "price": 110,
-      "description": "Fudgy chocolate brownie topped with vanilla ice cream & hot fudge",
-      "image": "/images/menu/desserts/brownie-sundae.jpg",
-      "badge": "Bestseller"
-    },
-    {
-      "id": "d3",
-      "name": "Churros with Dip",
-      "price": 90,
-      "description": "Crispy cinnamon churros with Belgian chocolate dipping sauce",
-      "image": "/images/menu/desserts/churros.jpg",
-      "badge": null
-    },
-    {
-      "id": "d4",
-      "name": "New York Cheesecake",
-      "price": 130,
-      "description": "Classic baked cheesecake with berry coulis & fresh strawberries",
-      "image": "/images/menu/desserts/cheesecake.jpg",
-      "badge": null
-    }
+    { "id": "d1", "name": "Molten Lava Cake", "price": 120, "description": "Warm dark chocolate cake with a lusciously gooey molten centre, served with a scoop of vanilla bean ice cream and berry coulis.", "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80", "badge": "Must Try", "rating": "4.8", "reviews": 234, "calories": 420, "fallback": "🍫" },
+    { "id": "d2", "name": "Brownie Sundae", "price": 110, "description": "Dense, fudgy double-chocolate brownie warm from the oven, topped with vanilla ice cream, hot fudge sauce and crushed walnuts.", "image": "https://images.unsplash.com/photo-1607478900766-efe13248b125?w=400&q=80", "badge": "Bestseller", "rating": "4.7", "reviews": 312, "calories": 490, "fallback": "🍩" },
+    { "id": "d3", "name": "Churros with Dip", "price": 90, "description": "Crispy Spanish-style churros dusted with cinnamon sugar, served with a rich Belgian dark chocolate dipping sauce.", "image": "https://images.unsplash.com/photo-1624371414361-e670edf4048b?w=400&q=80", "badge": null, "rating": "4.3", "reviews": 167, "calories": 340, "fallback": "🍩" },
+    { "id": "d4", "name": "New York Cheesecake", "price": 130, "description": "Classic baked New York style cheesecake with a buttery graham cracker crust, topped with fresh seasonal berry coulis and strawberries.", "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=400&q=80", "badge": null, "rating": "4.5", "reviews": 189, "calories": 410, "fallback": "🍰" }
   ]
 }

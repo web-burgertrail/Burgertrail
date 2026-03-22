@@ -5,17 +5,17 @@ import { motion } from 'framer-motion';
 // Images go in: /public/images/about/
 const VALUES = [
   {
-    image: '/images/about/bold-flavours.jpg',   // Replace with your image
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80', // Replace with /images/about/bold-flavours.jpg
     title: 'Bold Flavours',
     desc: 'Every recipe is crafted to deliver an unforgettable punch of flavour. No bland bites, no shortcuts — just fire on every plate.',
   },
   {
-    image: '/images/about/fresh-ingredients.jpg', // Replace with your image
+    image: 'https://images.unsplash.com/photo-1506484381205-f7945653044d?w=600&q=80', // Replace with /images/about/fresh-ingredients.jpg
     title: 'Fresh Ingredients',
     desc: 'We source only the freshest produce and meats, prepped daily from scratch. Quality you can taste in every single bite.',
   },
   {
-    image: '/images/about/open-late.jpg',         // Replace with your image
+    image: 'https://images.unsplash.com/photo-1428515613728-6b4607e44363?w=600&q=80', // Replace with /images/about/open-late.jpg
     title: 'Open Late',
     desc: "Because the best cravings hit after midnight. We're here from 3 PM to 3 AM, every single day — rain or shine.",
   },
@@ -51,9 +51,9 @@ export default function About() {
 
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="grid grid-cols-2 gap-3">
             {[
-              { src: '/images/ambience/interior1.jpg', cls: 'col-span-2 aspect-video' },
-              { src: '/images/ambience/exterior.jpg', cls: 'col-span-1 aspect-square' },
-              { src: '/images/ambience/interior2.jpg', cls: 'col-span-1 aspect-square' },
+              { src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80', cls: 'col-span-2 aspect-video' },
+              { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80', cls: 'col-span-1 aspect-square' },
+              { src: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&q=80', cls: 'col-span-1 aspect-square' },
             ].map(({ src, cls }, i) => (
               <div key={i} className={`${cls} rounded-2xl overflow-hidden bg-dark-700`}>
                 <img src={src} alt={`Ambience ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -89,9 +89,12 @@ export default function About() {
         </motion.div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
-            '/images/ambience/interior1.jpg', '/images/ambience/interior2.jpg',
-            '/images/ambience/exterior.jpg', '/images/menu/burgers/classic-chicken.jpg',
-            '/images/menu/pizza/trails-special.jpg', '/images/menu/desserts/lava-cake.jpg',
+            'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
+            'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
+            'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80',
+            'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80',
+            'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80',
+            'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80',
           ].map((src, i) => (
             <motion.div key={i} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
               className="aspect-square rounded-2xl overflow-hidden group bg-dark-700">
