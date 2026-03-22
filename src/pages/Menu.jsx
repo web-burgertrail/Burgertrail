@@ -43,7 +43,7 @@ export default function Menu() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}
-      className="min-h-screen" style={{ paddingTop: "6.5rem" }} style={{ paddingBottom: isMobile ? '5rem' : '2rem' }}>
+      className="min-h-screen" style={{ paddingTop: '7.8rem' }} style={{ paddingBottom: isMobile ? '5rem' : '2rem' }}>
 
       {/* Page header */}
       <div className="bg-dark-800/80 border-b border-white/5 px-4 sm:px-6 lg:px-8 py-4">

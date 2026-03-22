@@ -65,7 +65,7 @@ export default function Contact() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}
-      className="min-h-screen pb-20" style={{ paddingTop: '6.5rem' }}>
+      className="min-h-screen pb-20" style={{ paddingTop: '7.8rem' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}

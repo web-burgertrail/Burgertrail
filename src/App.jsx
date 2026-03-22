@@ -12,6 +12,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Order from './pages/Order';
 
+// Scroll to top on EVERY route change including same route re-click
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -23,10 +24,7 @@ function ScrollToTop() {
 function PageLoader() {
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-10 h-10 border-2 border-orange-primary/30 border-t-orange-primary rounded-full animate-spin" />
-        <p className="text-white/30 text-xs font-heading tracking-widest">LOADING...</p>
-      </div>
+      <div className="w-10 h-10 border-2 border-orange-primary/30 border-t-orange-primary rounded-full animate-spin"/>
     </div>
   );
 }
@@ -53,7 +51,7 @@ export default function App() {
       <CartProvider>
         <div className="min-h-screen bg-dark-900 text-white relative overflow-x-hidden">
           <div className="fixed inset-0 pointer-events-none z-0">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-primary/5 blur-[120px] rounded-full" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-primary/5 blur-[120px] rounded-full"/>
           </div>
           <ScrollToTop />
           <Navbar />
